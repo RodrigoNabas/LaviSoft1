@@ -10,7 +10,9 @@ namespace ProjetoLavi.Dominio.Entities.Fornecedor
     public class Fornecedor
     {
         public int FornecedorId { get; set;}
-        public string Nome { get; set; }
+
+        public string Fantasia { get; set; }
+        public string Endereco { get; set; }
         public string Estado { get; set; }
         public virtual Cnpj Cnpj { get; set; }
         public bool Ativo { get; set; }

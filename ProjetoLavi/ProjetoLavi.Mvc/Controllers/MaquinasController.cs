@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using ProjetoLavi.Aplicacao.Interface;
 using ProjetoLavi.Dominio.Entities.Maquinas;
+using ProjetoLavi.Dominio.Enums;
 using ProjetoLavi.Mvc.ViewModels;
 using System;
 using System.Collections.Generic;

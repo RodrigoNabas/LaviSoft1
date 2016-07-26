@@ -10,6 +10,8 @@ namespace ProjetoLavi.Comum.ModuloNinject
         {
             Bind(typeof(IRepositoryBase<>)).To(typeof(RepositoryBase<>));
             Bind<IClienteRepository>().To<ClienteRepository>();
+            Bind<IMaquinaRepository>().To<MaquinaRepository>();
+            Bind<IFornecedorRepository>().To<FornecedorRepository>();
         }
     }
 }

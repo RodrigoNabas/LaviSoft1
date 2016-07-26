@@ -16,58 +16,58 @@ namespace ProjetoLavi.Dominio.Entities.Maquinas
         public const int DescricaoMaxLength = 100;
         public string Descricao { get; private set; }
 
-        //public Ip IpMaquina { get; private set; }
-        //public EnumTipoMaquina TipoMaquina { get; private set; }
-        //public EnumModeloMaquina ModeloMaquina { get; private set; }
+        public Ip IpMaquina { get; private set; }
+        public EnumTipoMaquina TipoMaquina { get; private set; }
+        public EnumModeloMaquina ModeloMaquina { get; private set; }
         public double Capacidade { get; private set; }
-        //protected Maquina()
-        //{
+        protected Maquina()
+        {
 
-        //}
+        }
 
-        //public Maquina(string nome, string descricao, Ip ipMaquina, EnumTipoMaquina tipoMaquina, EnumModeloMaquina modeloMaquina, double capacidade)
-        //{
-        //    SetNome(nome);
-        //    SetCapacidade(capacidade);
-        //    SetModeloMaquina(modeloMaquina);
-        //    SetTipoMaquina(tipoMaquina);
-        //    SetIpMaquina(ipMaquina);
-        //    SetDescricao(descricao);
-        //}
+        public Maquina(string nome, string descricao, Ip ipMaquina, EnumTipoMaquina tipoMaquina, EnumModeloMaquina modeloMaquina, double capacidade)
+        {
+            SetNome(nome);
+            SetCapacidade(capacidade);
+            SetModeloMaquina(modeloMaquina);
+            SetTipoMaquina(tipoMaquina);
+            SetIpMaquina(ipMaquina);
+            SetDescricao(descricao);
+        }
 
-        //private void SetCapacidade(double capacidade)
-        //{
-        //    Guard.ValidarNaoNegativo(capacidade, "Capacidade");
-        //    Capacidade = capacidade;
-        //}
+        private void SetCapacidade(double capacidade)
+        {
+            Guard.ValidarNaoNegativo(capacidade, "Capacidade");
+            Capacidade = capacidade;
+        }
 
-        //private void SetModeloMaquina(EnumModeloMaquina modeloMaquina)
-        //{
-        //    ModeloMaquina = modeloMaquina;
-        //}
+        private void SetModeloMaquina(EnumModeloMaquina modeloMaquina)
+        {
+            ModeloMaquina = modeloMaquina;
+        }
 
-        //private void SetTipoMaquina(EnumTipoMaquina tipoMaquina)
-        //{
-        //    TipoMaquina = tipoMaquina;
-        //}
+        private void SetTipoMaquina(EnumTipoMaquina tipoMaquina)
+        {
+            TipoMaquina = tipoMaquina;
+        }
 
-        //public void SetNome(string nome)
-        //{
-        //    Guard.StringLength("Nome", nome, NomeMinLength, NomeMaxLength);
-        //    Nome = nome;
-        //}
+        public void SetNome(string nome)
+        {
+            Guard.StringLength("Nome", nome, NomeMinLength, NomeMaxLength);
+            Nome = nome;
+        }
 
-        //public void SetDescricao(string descricao)
-        //{
-        //    Guard.StringLength("Descricao", descricao, DescricaoMaxLength);
-        //    Descricao = descricao;
-        //}
+        public void SetDescricao(string descricao)
+        {
+            Guard.StringLength("Descricao", descricao, DescricaoMaxLength);
+            Descricao = descricao;
+        }
 
-        //public void SetIpMaquina(Ip ipMaquina)
-        //{
-        //    if (ipMaquina == null)
-        //        throw new Exception("Ip Obrigatório");
-        //    IpMaquina = ipMaquina;
-        //}
+        public void SetIpMaquina(Ip ipMaquina)
+        {
+            if (ipMaquina == null)
+                throw new Exception("Ip Obrigatório");
+            IpMaquina = ipMaquina;
+        }
     }
 }

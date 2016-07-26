@@ -12,6 +12,7 @@ namespace ProjetoLavi.Dominio.ValueObjects
 
         public Cnpj(string cnpj)
         {
+
             Guard.ForNullOrEmptyDefaultMessage("CNPJ", cnpj);
             cnpj = StringHelper.GetNumeros(cnpj);
             Guard.StringLength("CNPJ", CnpjMaxLength, cnpj);

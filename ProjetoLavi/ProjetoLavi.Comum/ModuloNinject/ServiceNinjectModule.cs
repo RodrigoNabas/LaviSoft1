@@ -12,9 +12,13 @@ namespace ProjetoLavi.Comum.ModuloNinject
         {
             Bind(typeof(IAppServiceBase<>)).To(typeof(AppServiceBase<>));
             Bind<IClienteAppService>().To<ClienteAppService>();
+            Bind<IMaquinaAppService>().To<MaquinaAppSerivce>();
+            Bind<IFornecedorAppService>().To<FornecedorAppService>();
 
             Bind(typeof(IServiceBase<>)).To(typeof(ServiceBase<>));
             Bind<IClienteService>().To<ClienteService>();
+            Bind<IMaquinaService>().To<MaquinaService>();
+            Bind<IFornecedorService>().To<FornecedorService>();
 
         }
     }

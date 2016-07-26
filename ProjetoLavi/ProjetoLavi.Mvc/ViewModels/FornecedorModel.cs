@@ -14,10 +14,13 @@ namespace ProjetoLavi.Mvc.ViewModels
         [Key]
         public int FornecedorId { get; set; }
 
-        [Required(ErrorMessage = "Preencha o campo Nome")]
+        [Required(ErrorMessage = "Preencha o campo Fantasia")]
         [MaxLength(150, ErrorMessage = "Máximo {0} caracteres")]
         [MinLength(2, ErrorMessage = "Minimo {0} caracteres")]
-        public string Nome { get; set; }
+        public string Fantasia { get; set; }
+
+        [Required(ErrorMessage = "Preencha o campo Endereço")]
+        public string Endereco { get; set; }
 
         [Required(ErrorMessage = "Preencha o campo Estado")]
         public string Estado { get; set; }
@@ -25,8 +28,8 @@ namespace ProjetoLavi.Mvc.ViewModels
         [Required(ErrorMessage = "Preencha o campo cnpj")]
         public Cnpj Cnpj { get; set; }
 
-
-
         public bool Ativo { get; set; }
+
+
     }
 }

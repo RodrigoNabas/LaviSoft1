@@ -15,7 +15,7 @@ namespace ProjetoLavi.Dados.EntityConfig
         {
             HasKey(c => c.FornecedorId);
 
-            Property(c => c.Nome)
+            Property(c => c.Fantasia)
                 .IsRequired();
 
             Property(c => c.Cnpj.CodCnpj)

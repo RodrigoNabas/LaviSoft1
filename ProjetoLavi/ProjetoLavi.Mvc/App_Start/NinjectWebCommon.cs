@@ -67,17 +67,7 @@ namespace ProjetoLavi.Mvc
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-            kernel.Bind(typeof(IAppServiceBase<>)).To(typeof(AppServiceBase<>));
-            kernel.Bind<IMaquinaAppService>().To<MaquinaAppSerivce>();
-            kernel.Bind<IFornecedorAppService>().To<FornecedorAppService>();
 
-            kernel.Bind(typeof(IServiceBase<>)).To(typeof(ServiceBase<>));
-            kernel.Bind<IMaquinaService>().To<MaquinaService>();
-            kernel.Bind<IFornecedorService>().To<FornecedorService>();
-
-            kernel.Bind(typeof(IRepositoryBase<>)).To(typeof(RepositoryBase<>));
-            kernel.Bind<IMaquinaRepository>().To<MaquinaRepository>();
-            kernel.Bind<IFornecedorRepository>().To<FornecedorRepository>();
         }        
     }
 }

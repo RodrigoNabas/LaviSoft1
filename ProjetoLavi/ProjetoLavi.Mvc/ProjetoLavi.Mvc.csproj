@@ -216,13 +216,13 @@
     <Content Include="Views\Maquinas\Index.cshtml" />
     <Content Include="Views\Maquinas\Edit.cshtml" />
     <Content Include="Views\Maquinas\Details.cshtml" />
-    <Content Include="Views\Maquinas\Create.cshtml" />
     <Content Include="Views\Clientes\Create.cshtml" />
-    <Content Include="Views\Fornecedor\Edit.cshtml" />
     <Content Include="Views\Fornecedor\Delete.cshtml" />
-    <Content Include="Views\Fornecedor\Index.cshtml" />
-    <Content Include="Views\Fornecedor\Create.cshtml" />
     <Content Include="Views\Fornecedor\Details.cshtml" />
+    <Content Include="Views\Maquinas\Create.cshtml" />
+    <Content Include="Views\Fornecedor\Create.cshtml" />
+    <Content Include="Views\Fornecedor\Index.cshtml" />
+    <Content Include="Views\Fornecedor\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
