@@ -21,7 +21,8 @@ namespace ProjetoLavi.Dados.EntityConfig
             Property(c => c.Cnpj.CodCnpj)
                 .IsRequired();
 
-
+            Property(c => c.Endereco)
+                .IsRequired();
 
             Property(c => c.Estado)
                 .IsRequired();
